@@ -42,7 +42,10 @@ def ravno():
    if w == 4:
       calc.insert(0, u * e )
    if w == 3:
-      calc.insert(0, e/u )
+      if u != 0:
+         calc.insert(0, e/u )
+      else:
+         calc.insert(0, "На ноль делить нельзя!")
    if w == 5:
       t = e ** u 
       calc.insert(0, t)
